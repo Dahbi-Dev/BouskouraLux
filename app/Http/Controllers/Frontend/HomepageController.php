@@ -15,5 +15,7 @@ class HomepageController extends Controller
         $slides = Slide::active()->orderBy('position', 'ASC')->get();;
         
         return view('frontend.homepage', compact('products', 'slides'));
+
+        
     }
 }

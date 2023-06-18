@@ -26,7 +26,7 @@
 										<td>{{ $payment->code }}</td>
 										<td>{{ date('d M Y H:i:s', strtotime($payment->created_at)) }}</td>
 										<td>{{ $payment->status }}</td>
-										<td>Rp{{ number_format($payment->amount, 0, ",", ".") }}</td>
+										<td>{{ number_format($payment->amount, 0, ",", ".") }}$</td>
 										<td>{{ $payment->method }}</td>
 										<td>{{ $payment->payment_type }}</td>
 										<td>{{ $payment->token }}</td>

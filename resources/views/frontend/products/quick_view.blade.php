@@ -46,7 +46,7 @@
 				<div class="qwick-view-content">
 					<h3>{{ $product->name }}</h3>
 					<div class="price">
-						<span class="new">{{ number_format($product->priceLabel()) }}</span>
+						<span class="new">{{ number_format($product->priceLabel()) }}$</span>
 						{{-- <span class="old">$120.00  </span> --}}
 					</div>
 					<p>{{ $product->short_description }}</p>

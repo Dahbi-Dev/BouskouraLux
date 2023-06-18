@@ -33,10 +33,10 @@
 										<td>
 											<a href="{{ url('admin/orders?start='. $revenue->date .'&end='. $revenue->date . '&status=completed') }}">{{ $revenue->num_of_orders }}</a>
 										</td>
-										<td>Rp{{ number_format($revenue->gross_revenue, 0, ",", ".") }}</td>
-										<td>Rp{{ number_format($revenue->taxes_amount, 0, ",", ".") }}</td>
-										<td>Rp{{ number_format($revenue->shipping_amount, 0, ",", ".") }}</td>
-										<td>Rp{{ number_format($revenue->net_revenue, 0, ",", ".") }}</td>
+										<td>{{ number_format($revenue->gross_revenue, 0, ",", ".") }}$</td>
+										<td>{{ number_format($revenue->taxes_amount, 0, ",", ".") }}$</td>
+										<td>{{ number_format($revenue->shipping_amount, 0, ",", ".") }}$</td>
+										<td>{{ number_format($revenue->net_revenue, 0, ",", ".") }}$</td>
 									</tr>
 
 									@php
@@ -56,10 +56,10 @@
 									<tr>
 										<td>Total</td>
 										<td><strong>{{ $totalOrders }}</strong></td>
-										<td><strong>Rp{{ number_format($totalGrossRevenue, 0, ",", ".") }}</strong></td>
-										<td><strong>Rp{{ number_format($totalTaxesAmount, 0, ",", ".") }}</strong></td>
-										<td><strong>Rp{{ number_format($totalShippingAmount, 0, ",", ".") }}</strong></td>
-										<td><strong>Rp{{ number_format($totalNetRevenue, 0, ",", ".") }}</strong></td>
+										<td><strong>{{ number_format($totalGrossRevenue, 0, ",", ".") }}$</strong></td>
+										<td><strong>{{ number_format($totalTaxesAmount, 0, ",", ".") }}$</strong></td>
+										<td><strong>{{ number_format($totalShippingAmount, 0, ",", ".") }}$</strong></td>
+										<td><strong>{{ number_format($totalNetRevenue, 0, ",", ".") }}$</strong></td>
 									</tr>
 								@endif
 							</tbody>

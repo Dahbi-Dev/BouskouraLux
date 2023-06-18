@@ -58,7 +58,7 @@
 												<a href="{{ url('product/'. $product->slug) }}"><img src="{{ $image }}" alt="{{ $product->name }}" style="width:100px"></a>
 											</td>
 											<td class="product-name"><a href="{{ url('product/'. $product->slug) }}">{{ $item->name }}</a></td>
-											<td class="product-price-cart"><span class="amount">Rp{{ number_format($item->price, 0, ",", ".") }}</span></td>
+											<td class="product-price-cart"><span class="amount">{{ number_format($item->price, 0, ",", ".") }}$</span></td>
 											<td class="product-quantity">
 											<select
 												className="form-control"
@@ -71,7 +71,7 @@
 												@endforeach
                                             </select>
 											</td>
-											<td class="product-subtotal">Rp{{ number_format($item->price * $item->qty, 0, ",", ".")}}</td>
+											<td class="product-subtotal">{{ number_format($item->price * $item->qty, 0, ",", ".")}}$</td>
 										</tr>
 									@empty
 										<tr>
@@ -95,7 +95,7 @@
 								<div class="cart-page-total">
 									<h2>Cart totals</h2>
 									<ul>
-										<li>Total<span>Rp{{ Cart::subtotal(0, ",", ".") }}</span></li>
+										<li>Total<span>{{ Cart::subtotal(0, ",", ".") }}$</span></li>
 										<!-- <li>Total<span>Rp{{ Cart::total(0, ",", ".") }}</span></li> -->
 									</ul>
 									<a href="{{ url('orders/checkout') }}">Proceed to checkout</a>

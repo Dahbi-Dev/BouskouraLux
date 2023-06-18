@@ -10,26 +10,28 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Buat Kategori</h3>
-                <a href="{{ route('admin.categories.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali</a>
+                <h3 class="card-title">Create a Category</h3>
+                <a href="{{ route('admin.categories.index')}}" class="btn btn-success shadow-sm float-right">
+                   <i class="fa fa-arrow-left"></i> Return</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <form method="post" action="{{ route('admin.categories.store') }}">
                     @csrf 
                     <div class="form-group row border-bottom pb-4">
-                        <label for="name" class="col-sm-2 col-form-label">Nama Kategori</label>
+                        <label for="name" class="col-sm-2 col-form-label">Category Name</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="name" value="{{ old('name') }}" id="name">
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="parent_id" class="col-sm-2 col-form-label">Kategori Utama</label>
+                        <label for="parent_id" class="col-sm-2 col-form-label">Main Category</label>
                         <div class="col-sm-10">
                           <select class="form-control" name="parent_id" id="parent_id">
-                            <option value="">Atur sebagai Kategori Utama</option>
+                            <option value="">Set as Primary Category</option>
                             @foreach($main_categories as $main_category)
-                              <option {{ old('parent_id') == $main_category->id ? 'selected' : null }} value="{{ $main_category->id }}"> {{ $main_category->name }}</option>
+                              <option {{ old('parent_id') == $main_category->id ? 'selected' : null }} 
+                                value="{{ $main_category->id }}"> {{ $main_category->name }}</option>
                             @endforeach
                           </select>
                         </div>

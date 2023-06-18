@@ -11,7 +11,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Data Slide</h3>
-                <a href="{{ route('admin.slides.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Tambah </a>
+                <a href="{{ route('admin.slides.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Add </a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -19,7 +19,7 @@
                     <table id="data-table" class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>No</th>
+                        <th>id</th>
                         <th>Title</th>
                         <th>Image</th>
                         <th>Position</th>

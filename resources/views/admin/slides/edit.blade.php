@@ -11,7 +11,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Edit Slide</h3>
-                <a href="{{ route('admin.slides.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali</a>
+                <a href="{{ route('admin.slides.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Return</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="path" class="col-sm-2 col-form-label">Gambar</label>
+                        <label for="path" class="col-sm-2 col-form-label">Picture</label>
                         <div class="col-sm-10">
                           <input type="file" class="form-control" name="path" id="path">
                         </div>

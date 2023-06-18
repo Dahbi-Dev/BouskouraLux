@@ -10,8 +10,8 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Upload Gambar Produk</h3>
-                <a href="{{ route('admin.products.product_images.index', $product)}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali</a>
+                <h3 class="card-title">Upload Product Images</h3>
+                <a href="{{ route('admin.products.product_images.index', $product)}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Return</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

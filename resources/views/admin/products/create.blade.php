@@ -10,15 +10,15 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Buat Produk</h3>
-                <a href="{{ route('admin.products.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali</a>
+                <h3 class="card-title">Create a Product</h3>
+                <a href="{{ route('admin.products.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Return</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <form method="post" action="{{ route('admin.products.store') }}">
                     @csrf 
                     <div class="form-group row border-bottom pb-4">
-                        <label for="type" class="col-sm-2 col-form-label">Tipe Kategori</label>
+                        <label for="type" class="col-sm-2 col-form-label">Category Type</label>
                         <div class="col-sm-10">
                           <select class="form-control product-type" name="type" id="type">
                             @foreach($types as $value => $type)
@@ -28,19 +28,19 @@
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="sku" class="col-sm-2 col-form-label">SKU</label>
+                        <label for="sku" class="col-sm-2 col-form-label">QR</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="sku" value="{{ old('sku') }}" id="sku">
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="name" class="col-sm-2 col-form-label">Nama Produk</label>
+                        <label for="name" class="col-sm-2 col-form-label">Product name</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="name" value="{{ old('name') }}" id="name">
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="category_id" class="col-sm-2 col-form-label">Kategori Produk</label>
+                        <label for="category_id" class="col-sm-2 col-form-label">Product Category</label>
                         <div class="col-sm-10">
                         <!-- sampai sini -->
                           <select class="form-control select-multiple"  multiple="multiple" name="category_id[]" id="category_id">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="configurable-attributes">
                       @if(count($configurable_attributes) > 0)
-                        <p class="text-primary mt-4">Konfigurasi Attribute Produk</p>
+                        <p class="text-primary mt-4">Product Attribute Configuration</p>
                         <hr/>
                         @foreach($configurable_attributes as $configurable_attribute)
                           <div class="form-group row border-bottom pb-4">

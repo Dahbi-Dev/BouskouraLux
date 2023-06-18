@@ -28,11 +28,11 @@ class AttributeSeeder extends Seeder
         ]);
 
         AttributeOption::create([
-            'name' => 'hijau',
+            'name' => 'green',
             'attribute_id' => $AttributeColor->id
         ]);
         AttributeOption::create([
-            'name' => 'biru',
+            'name' => 'blue',
             'attribute_id' => $AttributeColor->id
         ]);
         AttributeOption::create([

@@ -11,7 +11,8 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Data Attribute</h3>
-                <a href="{{ route('admin.attributes.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Tambah </a>
+                <a href="{{ route('admin.attributes.create')}}" class="btn btn-success shadow-sm float-right"> 
+                  <i class="fa fa-plus"></i> Add </a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -19,10 +20,10 @@
                     <table id="data-table" class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>No</th>
+                        <th>id</th>
                         <th>Code</th>
-                        <th>Nama</th>
-                        <th>Tipe</th>
+                        <th>Name</th>
+                        <th>Type</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -39,21 +40,24 @@
                                 </td>
                                 <td>
                                 <div class="btn-group btn-group-sm">
-                                    <a href="{{ route('admin.attributes.edit', $attribute) }}" class="btn btn-sm btn-primary">
+                                    <a href="{{ route('admin.attributes.edit', $attribute) }}"
+                                     class="btn btn-sm btn-primary">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <form onclick="return confirm('are you sure !')" action="{{ route('admin.attributes.destroy', $attribute) }}"
+                                    <form onclick="return confirm('are you sure !')"
+                                     action="{{ route('admin.attributes.destroy', $attribute) }}"
                                         method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-trash"></i></button>
+                                        <button class="btn btn-sm btn-danger" 
+                                        type="submit"><i class="fa fa-trash"></i></button>
                                     </form>
                                 </div>
                                 </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="5" class="text-center">Data Kosong !</td>
+                                <td colspan="5" class="text-center">Blank Data !</td>
                             </tr>
                         @endforelse
                     </table>

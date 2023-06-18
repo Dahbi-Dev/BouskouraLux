@@ -97,8 +97,8 @@
                                     <td>{{ $item->name }}</td>
                                     <td>{!! showAttributes($item->attributes) !!}</td>
                                     <td>{{ $item->qty }}</td>
-                                    <td>Rp{{ number_format($item->base_price,0,",",".") }}</td>
-                                    <td>Rp{{ number_format($item->sub_total,0,",",".") }}</td>
+                                    <td>${{ number_format($item->base_price,0,",",".") }}</td>
+                                    <td>${{ number_format($item->sub_total,0,",",".") }}</td>
                                 </tr>
                             @empty
                                 <tr>
@@ -111,16 +111,16 @@
                         <div class="col-lg-5 col-xl-4 col-xl-3 ml-sm-auto pb-4">
                             <ul class="list-unstyled mt-4">
                                 <li class="mid pb-3 text-dark">Subtotal
-                                    <span class="d-inline-block float-right text-default">Rp{{ number_format($order->base_total_price,0,",",".") }}</span>
+                                    <span class="d-inline-block float-right text-default">${{ number_format($order->base_total_price,0,",",".") }}</span>
                                 </li>
                                 <li class="mid pb-3 text-dark">Tax(10%)
-                                    <span class="d-inline-block float-right text-default">Rp{{ number_format($order->tax_amount,0,",",".") }}</span>
+                                    <span class="d-inline-block float-right text-default">${{ number_format($order->tax_amount,0,",",".") }}</span>
                                 </li>
                                 <li class="mid pb-3 text-dark">Shipping Cost
-                                    <span class="d-inline-block float-right text-default">Rp{{ number_format($order->shipping_cost,0,",",".") }}</span>
+                                    <span class="d-inline-block float-right text-default">${{ number_format($order->shipping_cost,0,",",".") }}</span>
                                 </li>
                                 <li class="pb-3 text-dark">Total
-                                    <span class="d-inline-block float-right">Rp{{ number_format($order->grand_total,0,",",".") }}</span>
+                                    <span class="d-inline-block float-right">${{ number_format($order->grand_total,0,",",".") }}</span>
                                 </li>
                             </ul>
                             @if (!$order->trashed())

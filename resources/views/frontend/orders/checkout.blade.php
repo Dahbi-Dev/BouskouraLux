@@ -25,13 +25,13 @@
 						<div class="row">
 							<div class="col-6">
 								<div class="checkout-form-list">
-									<label>Nama Pertama <span class="required">*</span></label>										
+									<label>First Name <span class="required">*</span></label>										
 									<input type="text" name="first_name" value="{{ old('first_name', auth()->user()->first_name) }}">
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="checkout-form-list">
-									<label>Nama Akhir <span class="required">*</span></label>										
+									<label>Last name <span class="required">*</span></label>										
 									<input type="text" name="last_name" value="{{ old('last_name', auth()->user()->last_name) }}">
 								</div>
 							</div>
@@ -48,9 +48,9 @@
 							</div>
 							<div class="col-md-12">
 								<div class="checkout-form-list">
-									<label>Provinsi<span class="required">*</span></label>
+									<label>Province<span class="required">*</span></label>
 									<select name="province_id" id="shipping-province">
-										<option value="">-- Pilih Provinsi --</option>
+										<option value="">-- Select Province --</option>
 										@foreach($provinces as $id => $province)
 											<option {{ auth()->user()->province_id == $id ? 'selected' : null }} value="{{ $id }}">{{ $province }}</option>
 										@endforeach
@@ -61,7 +61,7 @@
 								<div class="checkout-form-list">
 									<label>City<span class="required">*</span></label>	
 									<select name="shipping_city_id" id="shipping-city">
-										<option value="">-- Pilih Kota --</option>
+										<option value="">-- Select City --</option>
 										@if($cities)
 											@foreach($cities as $id => $city)
 												<option value="{{ $id }}">{{ $city }}</option>
@@ -100,13 +100,13 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="checkout-form-list">
-											<label>Nama Pertama <span class="required">*</span></label>										
+											<label>First Name <span class="required">*</span></label>										
 											<input type="text" name="customer_first_name" value="{{ old('customer_first_name') }}">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="checkout-form-list">
-											<label>Nama Akhir <span class="required">*</span></label>										
+											<label>Last name <span class="required">*</span></label>										
 											<input type="text" name="customer_last_name" value="{{ old('customer_last_name') }}">
 										</div>
 									</div>
@@ -126,7 +126,7 @@
 											<label>Province<span class="required">*</span></label>
 											<select name="customer_province_id" id="">
 												<option value="ntm">Ntb</option>
-												<option value="jaksel">Jakarta Selatan</option>
+												<option value="casablanca">Casablanca</option>
 											</select>
 										</div>
 									</div>
@@ -202,7 +202,7 @@
 								<tfoot>
 									<tr class="cart-subtotal">
 										<th>Subtotal</th>
-										<td><span class="amount">Rp{{ Cart::subtotal(0, ",", ".") }}</span></td>
+										<td><span class="amount">{{ Cart::subtotal(0, ",", ".") }}$</span></td>
 									</tr>
 									<!-- <tr class="cart-subtotal">
 										<th>Tax</th>
@@ -216,7 +216,7 @@
 									</tr>
 									<tr class="order-total">
 										<th>Order Total</th>
-										<td><strong>Rp<span class="total-amount">{{ Cart::subtotal(0, ",", ".") }}</span></strong>
+										<td><strong><span class="total-amount">{{ Cart::subtotal(0, ",", ".") }}</span>$</strong>
 										</td>
 									</tr>								
 								</tfoot>

@@ -14,17 +14,17 @@ class ProductSeeder extends Seeder
     public function run(): void
     {
         Product::create([
-            'sku' => 'produk-sku',
+            'qty' => 'product-qty',
             'type' => 'configurable',
-            'name' => 'nama produk',
-            'slug' => 'nama-produk',
+            'name' => 'name product',
+            'slug' => 'name-produt',
             'user_id' => 1
         ]);
         Product::create([
-            'sku' => 'product-sku-simple',
+            'qty' => 'product-qty-simple',
             'type' => 'simple',
-            'name' => 'nama produk simple',
-            'slug' => 'nama-produk-simple',
+            'name' => 'name produt simple',
+            'slug' => 'name-produt-simple',
             'user_id' => 1
         ]);
     }

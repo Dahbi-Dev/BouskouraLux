@@ -25,7 +25,7 @@
 								<thead>
 									<th>Order ID</th>
 									<th>Grand Total</th>
-									<th>Nomer Resi</th>
+									<th>Receipt Number</th>
 									<th>Status</th>
 									<th>Payment</th>
 									<th>Action</th>
@@ -37,7 +37,7 @@
 												{{ $order->code }}<br>
 												<span style="font-size: 12px; font-weight: normal"> {{ date('d M Y', strtotime($order->order_date)) }}</span>
 											</td>
-											<td>Rp{{ number_format($order->grand_total, 0, ",", ".") }}</td>
+											<td>{{ number_format($order->grand_total, 0, ",", ".") }}$</td>
 											<td>{{ $order->shipment->track_number }}</td>
 											<td>{{ $order->status }}</td>
 											<td>{{ $order->payment_status }}</td>

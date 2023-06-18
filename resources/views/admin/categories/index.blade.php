@@ -10,8 +10,10 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Kategori</h3>
-                <a href="{{ route('admin.categories.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Tambah </a>
+                <h3 class="card-title">Category Data</h3>
+                <a href="{{ route('admin.categories.create')}}" 
+                class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus">
+                  </i> Add </a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -19,9 +21,9 @@
                     <table id="data-table" class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>No</th>
-                        <th>Nama Kategori</th>
-                        <th>Nama Kategori Utama</th>
+                        <th>id</th>
+                        <th>Category Name</th>
+                        <th>Main Category Name</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -37,21 +39,24 @@
                                 </td>
                                 <td>
                                 <div class="btn-group btn-group-sm">
-                                    <a href="{{ route('admin.categories.edit', $category) }}" class="btn btn-sm btn-primary">
+                                    <a href="{{ route('admin.categories.edit', $category) }}
+                                    " class="btn btn-sm btn-primary">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <form onclick="return confirm('are you sure !')" action="{{ route('admin.categories.destroy', $category) }}"
+                                    <form onclick="return confirm('are you sure !')" 
+                                    action="{{ route('admin.categories.destroy', $category) }}"
                                         method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-trash"></i></button>
+                                        <button class="btn btn-sm btn-danger" type="submit">
+                                          <i class="fa fa-trash"></i></button>
                                     </form>
                                 </div>
                                 </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="4" class="text-center">Data Kosong !</td>
+                                <td colspan="4" class="text-center">Blank Data !</td>
                             </tr>
                         @endforelse
                     </table>

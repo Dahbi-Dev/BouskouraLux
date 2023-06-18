@@ -10,9 +10,9 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Edit Produk</h3>
-                <a href="{{ route('admin.products.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali</a>
-                <a href="{{ route('admin.products.product_images.index', $product)}}" class="btn btn-success shadow-sm mr-2 float-right"> <i class="fa fa-image"></i> Upload Gambar Produk</a>
+                <h3 class="card-title">Product Edit</h3>
+                <a href="{{ route('admin.products.index')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Return</a>
+                <a href="{{ route('admin.products.product_images.index', $product)}}" class="btn btn-success shadow-sm mr-2 float-right"> <i class="fa fa-image"></i>Upload Product Images</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -20,7 +20,7 @@
                     @csrf 
                     @method('put')
                     <div class="form-group row border-bottom pb-4">
-                        <label for="type" class="col-sm-2 col-form-label">Tipe Kategori</label>
+                        <label for="type" class="col-sm-2 col-form-label">Category Type</label>
                         <div class="col-sm-10">
                           <select class="form-control" name="type" id="type">
                             @foreach($types as $value => $type)
@@ -30,19 +30,19 @@
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="sku" class="col-sm-2 col-form-label">SKU</label>
+                        <label for="sku" class="col-sm-2 col-form-label">QR</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="sku" value="{{ old('sku', $product->sku) }}" id="sku">
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="name" class="col-sm-2 col-form-label">Nama Produk</label>
+                        <label for="name" class="col-sm-2 col-form-label">Product name</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" name="name" value="{{ old('name', $product->name) }}" id="name">
                         </div>
                     </div>
                     <div class="form-group row border-bottom pb-4">
-                        <label for="category_id" class="col-sm-2 col-form-label">Kategori Produk</label>
+                        <label for="category_id" class="col-sm-2 col-form-label">Product Category</label>
                         <div class="col-sm-10">
                         <!-- sampai sini -->
                           <select class="form-control select-multiple"  multiple="multiple" name="category_id[]" id="category_id">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     @if(!empty($configurable_attributes) && empty($product))
-                      <p class="text-primary mt-4">Konfigurasi Attribute Produk</p>
+                      <p class="text-primary mt-4">Product Attribute Configuration</p>
                       <hr/>
                       @foreach($configurable_attributes as $configurable_attribute)
                         <div class="form-group row border-bottom pb-4">
@@ -77,13 +77,13 @@
                         @endif
 
                         <div class="form-group row border-bottom pb-4">
-                            <label for="short_description" class="col-sm-2 col-form-label">Deskripsi Singkat</label>
+                            <label for="short_description" class="col-sm-2 col-form-label">Short Description</label>
                             <div class="col-sm-10">
                               <textarea class="form-control" name="short_description" id="short_description" cols="30" rows="5">{{ old('short_description', $product->short_description) }}</textarea>
                             </div>
                         </div>
                         <div class="form-group row border-bottom pb-4">
-                            <label for="description" class="col-sm-2 col-form-label">Deskripsi Produk</label>
+                            <label for="description" class="col-sm-2 col-form-label">Product Description</label>
                             <div class="col-sm-10">
                               <textarea class="form-control" name="description" id="description" cols="30" rows="5">{{ old('description', $product->description) }}</textarea>
                             </div>

@@ -28,7 +28,7 @@
 										<td>{{ $product->name }}</td>
 										<td>{{ $product->sku }}</td>
 										<td>{{ $product->items_sold }}</td>
-										<td>Rp{{ number_format($product->net_revenue, 0, ",", ".") }}</td>
+										<td>{{ number_format($product->net_revenue, 0, ",", ".") }}$</td>
 										<td>{{ $product->num_of_orders }}</td>
 										<td>{{ $product->stock }}</td>
 									</tr>

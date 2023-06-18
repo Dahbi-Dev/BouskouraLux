@@ -5,31 +5,31 @@
     <input type="hidden" value="{{ $variant->id }}" name="variants[{{ $variant->id }}][id]">
         <div class="col-md-2">
             <div class="form-group border-bottom pb-4">
-                <label for="sku" class="form-label">SKU</label>
+                <label for="sku" class="form-label">QR</label>
                 <input type="text" class="form-control" name="variants[{{ $variant->id }}][sku]" value="{{ old('sku', $variant->sku) }}" id="sku">
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-group border-bottom pb-4">
-                <label for="name" class="form-label">Nama Produk</label>
+                <label for="name" class="form-label">Product name</label>
                 <input type="text" class="form-control" name="variants[{{ $variant->id }}][name]" value="{{ old('name', $variant->name) }}" id="name">
             </div>
         </div>
         <div class="col-md-2">
             <div class="form-group border-bottom pb-4">
-                <label for="price" class="form-label">Harga Produk</label>
+                <label for="price" class="form-label">Product Price</label>
                 <input type="number" class="form-control" name="variants[{{ $variant->id }}][price]" value="{{ old('price', $variant->price) }}" id="price">
             </div>
         </div>
         <div class="col-md-2">
             <div class="form-group border-bottom pb-4">
-                <label for="qty" class="form-label">Jumlah Produk</label>
+                <label for="qty" class="form-label">Number of Products</label>
                 <input type="number" class="form-control" name="variants[{{ $variant->id }}][qty]" value="{{ old('qty', ($variant->productInventory) ? $variant->productInventory->qty : null) }}" id="qty">
             </div>
         </div>
         <div class="col-md-2">
             <div class="form-group border-bottom pb-4">
-                <label for="weight" class="form-label">Berat Produk</label>
+                <label for="weight" class="form-label">Product Weight</label>
                 <input type="number" class="form-control" name="variants[{{ $variant->id }}][weight]" value="{{ old('weight', $variant->weight) }}" id="weight">
             </div>
         </div>

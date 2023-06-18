@@ -33,7 +33,7 @@
                   </select>
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
-                  <button type="submit" class="btn btn-success shadow-sm float-right">Cari</button>
+                  <button type="submit" class="btn btn-success shadow-sm float-right">Find</button>
                 </div>
                 </form>
                 <div class="table-responsive">
@@ -53,7 +53,7 @@
                                         {{ $order->code }}<br>
                                         <span style="font-size: 12px; font-weight: normal"> {{ $order->order_date }}</span>
                                     </td>
-                                    <td>Rp{{ number_format($order->grand_total,0,",", ".") }}</td>
+                                    <td>${{ number_format($order->grand_total,0,",", ".") }}</td>
                                     <td>
                                         {{ $order->customer_full_name }}<br>
                                         <span style="font-size: 12px; font-weight: normal"> {{ $order->customer_email }}</span>

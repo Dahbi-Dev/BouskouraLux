@@ -11,7 +11,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Data Produk</h3>
-                <a href="{{ route('admin.products.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Tambah </a>
+                <a href="{{ route('admin.products.create')}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-plus"></i> Add </a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -19,11 +19,11 @@
                     <table id="data-table" class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>No</th>
-                        <th>SKU</th>
-                        <th>Tipe</th>
-                        <th>Nama Produk</th>
-                        <th>Harga</th>
+                        <th>id</th>
+                        <th>QR</th>
+                        <th>Type</th>
+                        <th>Product name</th>
+                        <th>Price</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -53,7 +53,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="7" class="text-center">Data Kosong !</td>
+                                <td colspan="7" class="text-center">Blank Data !</td>
                             </tr>
                         @endforelse
                         </tbody>

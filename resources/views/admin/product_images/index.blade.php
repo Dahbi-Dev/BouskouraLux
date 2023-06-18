@@ -10,8 +10,8 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data Gambar Produk</h3>
-                <a href="{{ route('admin.products.edit', $product)}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Kembali </a>
+                <h3 class="card-title">Product Image Data</h3>
+                <a href="{{ route('admin.products.edit', $product)}}" class="btn btn-success shadow-sm float-right"> <i class="fa fa-arrow-left"></i> Return </a>
                 <a href="{{ route('admin.products.product_images.create', $product)}}" class="btn btn-success shadow-sm float-right mr-2"> <i class="fa fa-upload"></i> Upload </a>
               </div>
               <!-- /.card-header -->
@@ -20,8 +20,8 @@
                     <table id="data-table" class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>No</th>
-                        <th>Gambar</th>
+                        <th>id</th>
+                        <th>Picture</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -47,7 +47,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="7" class="text-center">Data Kosong !</td>
+                                <td colspan="7" class="text-center">Blank Data !</td>
                             </tr>
                         @endforelse
                     </table>

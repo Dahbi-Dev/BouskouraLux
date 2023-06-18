@@ -171,7 +171,7 @@
                                                 <div class="product-content-list">
                                                     <div class="product-list-info">
                                                         <h4><a href="{{ url('product/'. $product->slug) }}">{{ $product->name }}</a></h4>
-                                                        <span>{{ number_format($product->priceLabel()) }}</span>
+                                                        <span>{{ number_format($product->priceLabel()) }}$</span>
                                                         <p>{!! $product->short_description !!}</p>
                                                     </div>
                                                     <div class="product-list-cart-wishlist">

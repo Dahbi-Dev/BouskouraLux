@@ -7,7 +7,7 @@
                 <div class="card card-default">
                     <div class="card-header card-header-border-bottom">
                         <h2>Trashed Orders</h2>
-                        <a href="{{ route('admin.orders.index')}}" class="btn btn-success shadow-sm float-right"> Kembali </a>
+                        <a href="{{ route('admin.orders.index')}}" class="btn btn-success shadow-sm float-right"> Return </a>
                     </div>
                     <div class="card-body">
                         <table id="data-table" class="table table-bordered table-striped">

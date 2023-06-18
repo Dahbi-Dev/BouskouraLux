@@ -42,7 +42,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-circle nav-icon"></i>
                     <p>
-                        Managemen Produk
+                        Product Management
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
@@ -50,7 +50,7 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.categories.index') }}" class="nav-link">
                             <i class="fa fa-plus nav-icon"></i>
-                            <p>Kategori</p>
+                            <p>Category</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -62,7 +62,7 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.products.index') }}" class="nav-link">
                             <i class="fa fa-plus nav-icon"></i>
-                            <p>Produk</p>
+                            <p>Product</p>
                         </a>
                     </li>
                 </ul>
@@ -71,7 +71,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-circle nav-icon"></i>
                     <p>
-                        Managemen Order
+                        Orders Management
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
@@ -85,7 +85,7 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.shipments.index') }}" class="nav-link">
                             <i class="fa fa-plus nav-icon"></i>
-                            <p>Pengiriman</p>
+                            <p>Delivery</p>
                         </a>
                     </li>
                 </ul>
@@ -94,7 +94,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-circle nav-icon"></i>
                     <p>
-                        Managemen Report
+                        Management Reports
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
@@ -102,13 +102,13 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.reports.revenue') }}" class="nav-link">
                             <i class="fa fa-plus nav-icon"></i>
-                            <p>Keuntungan</p>
+                            <p>Profit</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('admin.reports.product') }}" class="nav-link">
                             <i class="fa fa-plus nav-icon"></i>
-                            <p>Produk</p>
+                            <p>Product</p>
                         </a>
                     </li>
                     <li class="nav-item">

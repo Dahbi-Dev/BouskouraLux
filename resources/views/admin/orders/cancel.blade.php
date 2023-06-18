@@ -14,11 +14,13 @@
                     @method('put')
                     <div class="form-group">
                         <label for="cancellation_note">Cancellation Note</label>
-                        <textarea name="cancellation_note" id="cancellation_note" cols="30" rows="4" class="form-control">{{ old('cancellation_note') }}</textarea>
+                        <textarea name="cancellation_note" id="cancellation_note" cols="30"
+                         rows="4" class="form-control">{{ old('cancellation_note') }}
+                        </textarea>
                     </div>
                     <div class="form-footer pt-5 border-top">
                         <button type="submit" class="btn btn-success">Cancel Order</button>
-                        <a href="{{ url('admin/orders') }}" class="btn btn-dark">Kembali</a>
+                        <a href="{{ url('admin/orders') }}" class="btn btn-dark">Return</a>
                     </div>
                     </form>
                 </div>

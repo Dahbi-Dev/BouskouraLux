@@ -10,9 +10,9 @@
                             <div class="row">
                                 <div class="ml-auto col-lg-6">
                                     <div class="furniture-content fadeinup-animated">
-                                        <h2 class="animated">{{ $slide->title }}</h2>
-                                        <p class="animated">{{ $slide->body }}</p>
-                                        <a class="furniture-slider-btn btn-hover animated" href="{{ $slide->url }}">Go</a>
+                                        <h2 class="animated ">{{ $slide->title }}</h2>
+                                        <p class="animated ">{{ $slide->body }}</p>
+                                        <a class="furniture-slider-btn btn-hover animated " href="{{ $slide->url }}">Go</a>
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
 							</div>
 							<div class="funiture-product-content text-center">
 								<h4><a href="{{ url('product/'. $product->slug) }}">{{ $product->name }}</a></h4>
-								<span>Rp{{ number_format($product->priceLabel(), 0, ",", ".") }}</span>
+								<span>{{ number_format($product->priceLabel(), 0, ",", ".") }}$</span>
 							</div>
 						</div>
 					@endforeach

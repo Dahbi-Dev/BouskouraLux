@@ -107,8 +107,8 @@
 										<td>{{ $item->name }}</td>
 										<td>{!! showAttributes($item->attributes) !!}</td>
 										<td>{{ $item->qty }}</td>
-										<td>Rp{{ number_format($item->base_price,0,",",".") }}</td>
-										<td>Rp{{ number_format($item->sub_total,0,",",".") }}</td>
+										<td>{{ number_format($item->base_price,0,",",".") }}$</td>
+										<td>{{ number_format($item->sub_total,0,",",".") }}$</td>
 									</tr>
 								@empty
 									<tr>
@@ -123,16 +123,16 @@
 							<div class="cart-page-total">
 								<ul>
 									<li> Subtotal
-										<span>Rp{{ number_format($order->base_total_price, 0 ,",", ".") }}</span>
+										<span>{{ number_format($order->base_total_price, 0 ,",", ".") }}$</span>
 									</li>
 									<li>Tax (10%)
-										<span>Rp{{ number_format($order->tax_amount,0,",",".") }}</span>
+										<span>{{ number_format($order->tax_amount,0,",",".") }}$</span>
 									</li>
 									<li>Shipping Cost
-										<span>Rp{{ number_format($order->shipping_cost,0,",",".") }}</span>
+										<span>{{ number_format($order->shipping_cost,0,",",".") }}$</span>
 									</li>
 									<li>Total
-										<span>Rp{{ number_format($order->grand_total, 0,",", ".") }}</span>
+										<span>{{ number_format($order->grand_total, 0,",", ".") }}$</span>
 									</li>
 								</ul>
 								@if (!$order->isPaid())
