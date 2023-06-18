@@ -1,24 +1,26 @@
-# Laravel 10 - Toko Online
+# Laravel 10 - BouskouraLux
 
 ## Screenshots
 
-![preview img](/preview.png)
+![preview img](/preview.jpg)
+![preview2 img](/preview2.jpg)
+![preview3 img](/preview3.jpg)
 
-## Donwload
+## Download
 
-Clone Projek
-
-```bash
-  git clone https://github.com/abdulaziz-m5u/toko-online-laravel.git nama_projek
-```
-
-Masuk ke folder dengan perintah
+Clone Project
 
 ```bash
-  cd nama_projek
+  git clone https://github.com/abdulaziz-m5u/toko-online-laravel.git BouskouraLux
 ```
 
--   Copy .env.example menjadi .env kemudia edit database dan api key nya
+make folder and open it
+
+```bash
+  cd BouskouraLux
+```
+
+-   Copy .env.example to .env and edit database and api key too
 
 ```bash
     composer install
