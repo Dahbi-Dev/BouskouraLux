@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('content')
-	<div class="breadcrumb-area pt-205 pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/breadcrumb.jpg') }})">
+	<div class=" pt-205 pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/1903-500.jpg') }})">
 		<div class="container">
 			<div class="breadcrumb-content text-center">
 				<h2>product details</h2>

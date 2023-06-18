@@ -1,19 +1,21 @@
 @extends('frontend.layout')
 
 @section('content')
-<div class="breadcrumb-area pt-205 breadcrumb-padding pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/breadcrumb.jpg') }})">
+<div class="breadcrumb-area  breadcrumb-padding mb-20" 
+{{-- style="background-image: url({{ asset('themes/ezone/assets/img/bg/breadcrumb.jpg') }})" --}}
+>
 	<div class="container-fluid">
 		<div class="breadcrumb-content text-center">
-			<h2>Login</h2>
+			<h2 class="text-dark">Login</h2>
 			<ul>
-				<li><a href="#">home</a></li>
-				<li>login</li>
+				<li><a href="#" class="text-dark">home</a></li>
+				<li class="text-dark">login</li>
 			</ul>
 		</div>
 	</div>
 </div>
 <!-- register-area start -->
-<div class="register-area ptb-100">
+<div class="register-area">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 col-12 col-lg-12 col-xl-6 ml-auto mr-auto">

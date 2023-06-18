@@ -30,7 +30,9 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
-                    {{ auth()->user()->first_name . auth()->user()->last_name }}
+                  <strong>
+                      {{ auth()->user()->first_name .' '. auth()->user()->last_name }}
+                    </strong>  
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" style="left: inherit; right: 0px;">
                     <a href="{{ route('admin.profile.show') }}" class="dropdown-item">
@@ -59,7 +61,7 @@
             <img src="{{ asset('images/AdminLTELogo.png') }}" alt="AdminLTE Logo"
                  class="brand-image img-circle elevation-3"
                  style="opacity: .8">
-            <span class="brand-text font-weight-light">AdminLTE 3</span>
+            <span class="brand-text font-weight-light">Admin {{ auth()->user()->first_name }}</span>
         </a>
 
         @include('layouts.navigation')

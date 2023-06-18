@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/favicon.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/ezone/assets/img/svg122.png') }}">
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="{{ asset('themes/ezone/assets/css/bootstrap.min.css') }}">
@@ -39,7 +39,7 @@
                     <div class="header-bottom-wrapper">
                         <div class="logo-2 furniture-logo ptb-30">
                             <a href="/">
-                                <img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt="">
+                                <img src="{{ asset('themes/ezone/assets/img/logo/53.png') }}" alt="">
                             </a>
                         </div>
                         <div class="menu-style-2 furniture-menu menu-hover">
@@ -317,7 +317,7 @@
                 <div class="container-fluid">
                     <div class="widget-wrapper">
                         <div class="footer-widget mb-30">
-                            <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/2.png') }}" alt=""></a>
+                            <a href="#"><img src="{{ asset('themes/ezone/assets/img/logo/53.png') }}" alt=""></a>
                             <div class="footer-about-2">
                                 <p>There are many variations of passages of Lorem Ipsum <br>the majority have suffered alteration in some form, by <br> injected humour</p>
                             </div>
@@ -330,7 +330,7 @@
                                         <span>Address: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p>66 Sipu road Rampura Banasree <br>USA- 10800</p>
+                                        <p>Bouskoura , Victoria <br>MAR- 27182</p>
                                     </div>
                                 </div>
                                 <div class="footer-address-furniture">
@@ -338,7 +338,7 @@
                                         <span>Phone: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p>+8801 (33) 515609735 <br>+8801 (66) 223352333</p>
+                                        <p>+212 674-786770<br>+212 635-942213</p>
                                     </div>
                                 </div>
                                 <div class="footer-address-furniture">
@@ -346,7 +346,7 @@
                                         <span>E-mail: </span>
                                     </div>
                                     <div class="footer-info-content3">
-                                        <p><a href="#"> email@domain.com</a> <br><a href="#"> domain@mail.info</a></p>
+                                        <p><a href="#"> contact.houssamdahbi@gmail.com</a> <br><a href="#"> oukdabilal@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>

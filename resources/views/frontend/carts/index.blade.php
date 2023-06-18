@@ -2,7 +2,7 @@
 
 @section('content')
 	<!-- header end -->
-	<div class="breadcrumb-area pt-205 breadcrumb-padding pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/breadcrumb.jpg') }})">
+	<div class="breadcrumb-area pt-205 breadcrumb-padding pb-210" style="background-image: url({{ asset('themes/ezone/assets/img/bg/1903-500.jpg') }})">
 		<div class="container">
 			<div class="breadcrumb-content text-center">
 				<h2>cart page</h2>
@@ -98,7 +98,7 @@
 										<li>Total<span>{{ Cart::subtotal(0, ",", ".") }}$</span></li>
 										<!-- <li>Total<span>Rp{{ Cart::total(0, ",", ".") }}</span></li> -->
 									</ul>
-									<a href="{{ url('orders/checkout') }}">Proceed to checkout</a>
+									<a href="{{ url('./orders/checkout') }}">Proceed to checkout</a>
 								</div>
 							</div>
 						</div>
